@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              softRed: "hsl(7, 99%, 70%)",
+              yellow: "hsl(51, 100%, 49%)",
+              darkDesaturatedCyan: "hsl(167, 40%, 24%)",
+              darkBlue: "hsl(198, 62%, 26%)",
+              darkModerateCyan: "hsl(168, 34%, 41%)",
+              veryDarkDesaturatedBlue: "hsl(212, 27%, 19%)",
+              veryDarkGrayishBlue: "hsl(213, 9%, 39%)",
+              darkGrayishBlue: "hsl(232, 10%, 55%)",
+              grayishBlue: "hsl(210, 4%, 67%)",
+              white: "hsl(0, 0%, 100%)",
+            },
+            fontFamily: {
+              barlow: ["Barlow", "sans-serif"],
+              fraunces: ["Fraunces", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-barlow h-screen text-[18px]">
+    <div
+      class="w-[300px] menubar hidden h-[300px] mt-20 absolute ml-7 lg:hidden md:hidden bg-white"
+    >
+      <div class="flex flex-col mt-10 items-center gap-5">
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Projects</a>
+        <a
+          class="bg-yellow py-3 px-10 rounded-full text-veryDarkDesaturatedBlue font-fraunces"
+          href=""
+          >Contact</a
+        >
+      </div>
+    </div>
+    <header
+      class="text-white pb-0 lg:pb-[990px] md:pb-[990px] h-screen lg:bg-[url('./images/desktop/image-header.jpg')] md:bg-[url('./images/desktop/image-header.jpg')] bg-[url('./images/mobile/image-header.jpg')] bg-cover bg-no-repeat bg-[center_bottom]"
+    >
+      <nav
+        class="hidden pt-10 lg:flex md:flex justify-between items-center px-14"
+      >
+        <img src="images/logo.svg" alt="" />
+        <div class="flex items-center gap-14">
+          <a href="">About</a>
+          <a href="">Service</a>
+          <a href="">Projects</a>
+          <a
+            class="bg-white py-3 px-10 rounded-full text-veryDarkDesaturatedBlue font-fraunces"
+            href=""
+            >Contact</a
+          >
+        </div>
+      </nav>
+      <nav class="flex px-5 pt-5 justify-between md:hidden lg:hidden">
+        <img src="images/logo.svg" alt="" />
+        <a class="menu-on" href="">
+          <img src="images/icon-hamburger.svg" alt="" />
+        </a>
+        <a class="menu-off hidden" href="">
+          <img src="images/icon-close.svg" alt="" />
+        </a>
+      </nav>
+      <div
+        class="flex flex-col gap-40 lg:gap-20 md:gap-20 items-center pt-32 lg:pt-32 md:pt-32"
+      >
+        <h1
+          class="font-bold font-fraunces text-3xl lg:text-8xl md:text-8xl text-center uppercase tracking-[10px]"
+        >
+          We are creatives
+        </h1>
+        <img src="images/icon-arrow-down.svg" alt="" />
+      </div>
+    </header>
+    <div
+      class="md:flex lg:flex flex md:flex-row lg:flex-row flex-col flex-col-reverse justify-between"
+    >
+      <div
+        class="bg-white lg:py-60 md:py-60 lg:w-1/2 md:w-1/2 md:h-1/2 lg:h-1/2 lg:text-left md:text-left text-center py-20 px-8 lg:px-40 md:px-40 flex flex-col gap-7"
+      >
+        <h2
+          class="font-fraunces md:text-7xl text-3xl lg:text-7xl md:text-left lg:text-left"
+        >
+          Transform your brand
+        </h2>
+        <p
+          class="text-veryDarkGrayishBlue md:text-2xl lg:text-2xl lg:leading-[40px] md:leading-[40px]"
+        >
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you
+        </p>
+
+        <a
+          class="font-fraunces text-xl relative lg:before:content-['LEARN'] lg:before:absolute lg:before:bottom-[-2px] lg:after:content-['MORE'] lg:after:absolute lg:after:right-0 lg:after:bottom-[-2px] bg-yellow w-[140px] h-[8px] hidden lg:block md:block"
+          href=""
+        ></a>
+      </div>
+      <div
+        class="md:bg-[url('./images/desktop/image-transform.jpg')] lg:bg-[url('./images/desktop/image-transform.jpg')] bg-[url('./images/mobile/image-transform.jpg')] bg-cover bg-center bg-no-repeat lg:w-1/2 md:w-1/2 h-1/2 py-[150px] lg:py-[500px] md:py-[500px]"
+      ></div>
+    </div>
+    <div class="lg:flex md:flex justify-between">
+      <div
+        class="lg:bg-[url('./images/desktop/image-stand-out.jpg')] md:bg-[url('./images/desktop/image-stand-out.jpg')] bg-[url('./images/mobile/image-stand-out.jpg')] bg-cover md:bg-cover lg:bg-cover bg-center bg-no-repeat md:px-0 lg:px-0 w-full md:w-1/2 lg:w-1/2 lg:py-[500px] md:py-[500px] py-[150px]"
+      ></div>
+      <div
+        class="bg-white lg:py-60 md:py-60 lg:w-1/2 md:w-1/2 md:h-1/2 lg:h-1/2 md:text-left lg:text-left text-center py-20 px-8 lg:px-40 md:px-40 flex flex-col gap-7"
+      >
+        <h2
+          class="font-fraunces md:text-7xl text-3xl lg:text-7xl md:text-left lg:text-left"
+        >
+          Stand out to the right audience
+        </h2>
+        <p
+          class="text-veryDarkGrayishBlue md:text-2xl lg:text-2xl lg:leading-[40px] md:leading-[40px]"
+        >
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we'll build and extend
+          you brand in digital place.
+        </p>
+        <a
+          class="font-fraunces text-xl relative lg:before:content-['LEARN'] lg:before:absolute lg:before:bottom-[-2px] lg:after:content-['MORE'] lg:after:absolute lg:after:right-0 lg:after:bottom-[-2px] bg-yellow w-[140px] h-[8px] hidden lg:block md:block"
+          href=""
+        ></a>
+      </div>
+    </div>
+    <div class="md:flex lg:flex lg:justify-between md:justify-between">
+      <div
+        class="md:bg-[url('./images/desktop/image-graphic-design.jpg')] lg:bg-[url('./images/desktop/image-graphic-design.jpg')] bg-[url('./images/mobile/image-graphic-design.jpg')] bg-cover bg-[center_top] text-center bg-no-repeat md:py-96 lg:py-96 lg:w-1/2 w-full md:w-1/2 h-1/2 px-10 md:px-40 lg:px-40 lg:flex md:flex flex-col pb-10 pt-[340px] gap-7"
+      >
+        <h2
+          class="font-fraunces lg:mt-[400px] md:mt-[400px] text-darkDesaturatedCyan text-3xl lg:text-5xl md:text-5xl"
+        >
+          Graphic Design
+        </h2>
+        <p
+          class="text-darkDesaturatedCyan lg:text-2xl md:text-2xl lg:leading-[40px] mt-5 md:mt-0 lg:mt-0 md:leading-[40px]"
+        >
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we'll build and extend
+          you brand in digital place.
+        </p>
+      </div>
+      <div
+        class="lg:bg-[url('./images/desktop/image-photography.jpg')] md:bg-[url('./images/desktop/image-photography.jpg')] bg-[url('./images/mobile/image-photography.jpg')] bg-cover bg-[center_top] text-center bg-no-repeat md:py-96 lg:py-96 lg:w-1/2 w-full md:w-1/2 h-1/2 px-5 md:px-40 lg:px-40 lg:flex md:flex flex-col px-10 pb-10 pt-[340px] gap-7"
+      >
+        <h2
+          class="font-fraunces lg:mt-[400px] md:mt-[400px] text-darkDesaturatedCyan text-3xl lg:text-5xl md:text-5xl"
+        >
+          Photography
+        </h2>
+        <p
+          class="text-darkDesaturatedCyan lg:text-2xl md:text-2xl lg:leading-[40px] mt-5 md:mt-0 lg:mt-0 md:leading-[40px]"
+        >
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve that improve your business image.
+        </p>
+      </div>
+    </div>
+    <div class="text-center mt-20">
+      <h4
+        class="font-fraunces lg:text-3xl md:text-3xl lg:tracking-[5px] md:tracking-[5px] uppercase text-grayishBlue"
+      >
+        Client Testimonials
+      </h4>
+      <div class="lg:flex md:flex mt-10">
+        <div class="flex flex-col md:py-0 lg:py-0 py-10 items-center gap-7">
+          <img
+            class="rounded-full w-[100px]"
+            src="images/image-emily.jpg"
+            alt=""
+          />
+          <p class="md:px-32 lg:px-32 px-8">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div class="space-y-2">
+            <p class="font-fraunces text-xl">Emily R.</p>
+            <p class="text-veryDarkGrayishBlue">Marketing Director</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center md:py-0 lg:py-0 py-10 gap-7">
+          <img
+            class="rounded-full w-[100px]"
+            src="images/image-thomas.jpg"
+            alt=""
+          />
+          <p class="md:px-32 lg:px-32 px-8">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div class="space-y-2">
+            <p class="font-fraunces text-xl">Thomas S.</p>
+            <p class="text-veryDarkGrayishBlue">Chief Operator Officer</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center md:py-0 lg:py-0 py-10 gap-7">
+          <img
+            class="rounded-full w-[100px]"
+            src="images/image-jennie.jpg"
+            alt=""
+          />
+          <p class="md:px-32 lg:px-32 px-8">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div class="space-y-2">
+            <p class="font-fraunces text-xl">Jennie F.</p>
+            <p class="text-veryDarkGrayishBlue">Business Owner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid mt-20 grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
+      <div
+        class="bg-[url('./images/mobile/image-gallery-milkbottles.jpg')] md:bg-[url('./images/desktop/image-gallery-milkbottles.jpg')] lg:bg-[url('./images/desktop/image-gallery-milkbottles.jpg')] bg-no-repeat bg-cover bg-[center_bottom] pb-[150px] w-full h-full lg:h-[500px] md:h-[500px]"
+      ></div>
+      <div
+        class="bg-[url('./images/mobile/image-gallery-orange.jpg')] md:bg-[url('./images/desktop/image-gallery-orange.jpg')] lg:bg-[url('./images/desktop/image-gallery-orange.jpg')] bg-no-repeat bg-cover bg-[center_bottom] w-full h-full lg:h-[500px] md:h-[500px] pb-[200px]"
+      ></div>
+      <div
+        class="bg-[url('./images/mobile/image-gallery-cone.jpg')] md:bg-[url('./images/desktop/image-gallery-cone.jpg')] lg:bg-[url('./images/desktop/image-gallery-cone.jpg')] bg-no-repeat bg-cover bg-[center_bottom] h-full w-full lg:h-[500px] md:h-[500px] pb-[200px]"
+      ></div>
+      <div
+        class="bg-[url('./images/desktop/image-gallery-sugarcubes.jpg')] md:bg-[url('./images/desktop/image-gallery-sugarcubes.jpg')] lg:bg-[url('./images/desktop/image-gallery-sugarcubes.jpg')] bg-no-repeat bg-cover bg-[center_bottom] h-full w-full lg:h-[500px] md:h-[500px] pb-[200px]"
+      ></div>
+    </div>
+    <footer class="bg-darkModerateCyan py-20 flex flex-col gap-14 items-center">
+      <img class="w-[200px]" src="images/logo footer.svg" alt="" />
+      <div class="flex gap-7">
+        <a class="text-darkDesaturatedCyan lg:text-3xl md:text-3xl" href=""
+          >About</a
+        >
+        <a class="text-darkDesaturatedCyan lg:text-3xl md:text-3xl" href=""
+          >Services</a
+        >
+        <a class="text-darkDesaturatedCyan lg:text-3xl md:text-3xl" href=""
+          >Projects</a
+        >
+      </div>
+      <div class="flex mt-10 gap-10">
+        <img class="w-[30px]" src="images/icon-facebook.svg" alt="" />
+        <img class="w-[30px]" src="images/icon-instagram.svg" alt="" />
+        <img class="w-[30px]" src="images/icon-twitter.svg" alt="" />
+        <img class="w-[30px]" src="images/icon-pinterest.svg" alt="" />
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
